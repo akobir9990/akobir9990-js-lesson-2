@@ -36,9 +36,9 @@ for (let shortName = [], i = 0; i < arr.length; i++) {
   shortName.push(arr[i].length);
   if (i == arr.length - 1) {
     console.log(
-      `Massivdagi eng qisqa element bu: ${arr[i]} va unda  ${Math.min(
-        ...shortName
-      )} bit ma'lumot bor`
+      `Massivdagi eng qisqa element bu: ${
+        arr[shortName.indexOf(Math.min(...shortName))]
+      } va unda  ${Math.min(...shortName)} bit ma'lumot bor`
     );
   }
 }
