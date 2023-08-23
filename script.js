@@ -109,3 +109,80 @@ let telCompamyes = {
 telCompamyes.ucell == 93
   ? console.log("ha ucell edi")
   : console.log(`yoq 93 ucell emas`);
+
+// if (a > 0) {
+//   console.log(++a);
+// } else {
+//   console.log(--a);
+// }
+
+a > 0 ? console.log(++a) : console.log(--a);
+
+if (a > 0) {
+  a = a + 3;
+  console.log(a);
+} else {
+  a = a - 2;
+  console.log(a);
+}
+
+console.log(`a = ${a} b = ${b} bular orasida kattasi: ${Math.max(a, b)}`);
+
+console.log(
+  `a = ${a} b = ${b} c = ${c} bular orasida kattasi: ${Math.max(a, b, c)}`
+);
+
+let stipendia = [
+  {
+    status: 5,
+    earn: 500,
+  },
+  {
+    status: 4,
+    earn: 400,
+  },
+  {
+    status: 3,
+    earn: 300,
+  },
+  {
+    status: 2,
+    earn: 0,
+  },
+  {
+    status: 1,
+    earn: 0,
+  },
+];
+
+let studentStatus = prompt("bahoyingiz nechi", "");
+
+if (studentStatus == 5) {
+  console.log(
+    `sizning bahoyingiz ${studentStatus}, stipendiyangiz ${
+      stipendia[stipendia.length - studentStatus].earn
+    }$`
+  );
+} else if (studentStatus == 4) {
+  console.log(
+    `sizning bahoyingiz ${studentStatus}, stipendiyangiz ${
+      stipendia[stipendia.length - studentStatus].earn
+    }$`
+  );
+} else if (studentStatus == 3) {
+  console.log(
+    `sizning bahoyingiz ${studentStatus}, stipendiyangiz ${
+      stipendia[stipendia.length - studentStatus].earn
+    }$`
+  );
+} else if (studentStatus == 4) {
+  console.log(
+    `sizning bahoyingiz ${studentStatus}, stipendiyangiz ${
+      stipendia[stipendia.length - studentStatus].earn
+    }$`
+  );
+} else if (studentStatus > 5) {
+  console.log(`kimni aldamoqchisan`);
+} else if (studentStatus < 2) {
+  console.log(`o'l bu kuningdan`);
+}
